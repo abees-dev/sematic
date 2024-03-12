@@ -20,7 +20,7 @@ jobs:
           node-version: 14
       - name: Install Dependencies and Run Semantic Release
         run: |
-          npm install
+          yarn
           npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
